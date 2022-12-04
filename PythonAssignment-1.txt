@@ -1,0 +1,161 @@
+## Assignment Part-1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q1. Why do we call Python as a general purpose and high-level programming language?
+  - We call python a high-level programming language because we can use human readable language to code logic which is easily understandable by humans,rather than using binary language(object code or machine code).
+  - We call python a general purpose language because we can use it for various applications like machine learning,web development,image processing,NLP etc by importing the required package.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q2. Why is Python called a dynamically typed language?
+  - Because,in python the type of the variable is determined at runtime i.e when we run the programm unlike in other programming languages like c,c++
+    where in we have to specify the data type during initialization and memory is allocated accordingly.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q3. List some pros and cons of Python programming language?
+  - pros:
+	1.general purpose and can be used for a variety of application.
+	2.dynamic memory allocation for variables.
+	3.Every functionality can be implemented in Packages.
+	4.supports functional overloading and variable overloading.
+  - cons:
+	1.speed of execution is slow compared to other languages.
+	2.Inefficient Memory consumption.
+        3.Not suited for Mobile Devices.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q4. In what all domains can we use Python?
+  - Artificial intelligence,IOT,Web Development,Data Science,Photography,Sound Processing etc.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q5. What are variable and how can we declare them?
+  - variables are used for storing data of specific type in memory at a certain memory location.
+    It acts as a unique refrence to the data.variables can be declared as follows:
+    1.int type variable:
+      a=34
+    2. string type variable:
+      st="hello"
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q6. How can we take an input from the user in Python?
+  - We can take input from the user using the input() function in python.
+  - during runtime,the input function throws a prompt to accept the input in the form of a string which can later be 
+    type casted to the desired type.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+ - string.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q8. What is type casting?
+ - Type casting refers to explicitly changing the data type of a certain variable for specific purpose/usage.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+ - Yes, we can take more than one input from user seperated by any special character (delimiter) by using the split() function along with
+   the input() function as the input is always taken in string format.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q10. What are keywords?
+ - Keywords are reserved words in any language which are used for it's own internal representation/usage like for representing some builtin function,
+   data types,for defining functions,for representing operators etc.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q11. Can we use keywords as a variable? Support your answer with reason.
+ - No, we cannot use keywords as a variable because keywords are words which are reserved for
+   the language's internal usage.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q12. What is indentation? What's the use of indentaion in Python?
+ - indentation is used to represent the scope of functions,loops,conditional statements etc.
+ - It provides a structural representation of your logic.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q13. How can we throw some output in Python?
+ - by using the print function.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q14. What are operators in Python?
+  - operators in python are a set of characters used to perform different operations(arithmetic,logical,boolean etc.) depending on the 
+    type of variables on the values represented by variables.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q15. What is difference between / and // operators?
+  - / operator is used for complete division whereas // operator gives us the integer part of the value obtained after complete division.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+  - code:
+	st="iNeuron"
+	print(st*4)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+  - code:
+	num=int(input())
+	if num%2==0:
+		print("even")
+	else:
+		print("odd")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q18. What are boolean operator?
+  - boolean operators are those which when used on operands will return boolean values i.e True or False.
+    eg.AND,OR,NOT,>,>=,<,<=,==,!=
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q19. What will the output of the following?
+```
+1 or 0
+- 1
+
+0 and 0
+- 0
+
+True and False and True
+-False
+
+1 or 0 or 0
+-1
+```
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q20. What are conditional statements in Python?
+  - conditional statements are used to alter/modify the general flow of execution of a programm based on certain logical or boolean conditions.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+ - if,else keywords are used to code conditional statements in a programm.a single pair of if,else keyword can be used to represent a particular condition.if the condition returns true the code under the if block is executed whereas if the condition fails i.e. it returns true then the code under the
+else block gets executed.
+   elif keyword is used for checking more than one conditions in a sequential manner(ladder if-else).
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+ - code:
+	age=int(input())
+	if age>=18:
+		print("I can vote")
+	else:
+		print("I can't vote")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+  - code:
+	summ=0
+	for num in numbers:
+		if num%2==0:
+			summ=summ+num
+	print(summ)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+  - code:
+    	lst=[]
+    	for i in range(3):
+		lst.append(int(input()))
+    	gr_num=0
+    	for num in lst:
+    		if num>gr_num:
+	   		gr_num=num
+    	print(gr_num)
+------------------------------------------------------------------------------------------------------------------------------------------------------------    	
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+ - code:
+	for num in numbers:
+		if num>150:
+			continue
+		elif (num>500):
+			break
+		elif (num%5==0):
+			print(num)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
